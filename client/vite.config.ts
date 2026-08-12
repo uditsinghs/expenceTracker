@@ -11,11 +11,5 @@ export default defineConfig({
   },
   server: {
     port: 5173,
-    proxy: {
-      '/api': {
-        target: process.env.VITE_API_PROXY ?? 'https://expencetracker-6v3t.onrender.com',
-        changeOrigin: true,
-      },
-    },
   },
 });
