@@ -12,6 +12,6 @@ export const env = {
   port: Number(process.env.PORT ?? 4000),
   nodeEnv: process.env.NODE_ENV ?? 'development',
   mongoUri: required('MONGODB_URI'),
-  clientOrigin: process.env.CLIENT_ORIGIN ?? 'http://localhost:5173',
+  clientOrigin: process.env.CLIENT_ORIGIN ?? "https://expencetracker-6v3t.onrender.com",
   isProd: (process.env.NODE_ENV ?? 'development') === 'production',
 };
