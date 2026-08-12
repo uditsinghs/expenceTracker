@@ -11,7 +11,7 @@ import { udhaarRouter } from './routes/udhaar.routes.js';
 export function createApp() {
   const app = express();
 
-  app.use(cors({ origin: env.clientOrigin.split(',').map((value) => value.trim()) }));
+  app.use(cors({}));
   app.use(express.json({ limit: '100kb' }));
   if (!env.isProd) app.use(morgan('dev'));
 
