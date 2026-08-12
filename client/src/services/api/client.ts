@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:4000/api';
+const BASE_URL = import.meta.env.VITE_API_URL ?? 'https://expencetracker-6v3t.onrender.com/api';
 
 export class ApiRequestError extends Error {
   status: number;
